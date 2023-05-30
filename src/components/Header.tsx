@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { IoLogoGithub } from "react-icons/io5/index.js";
 export default function Header() {
@@ -5,11 +6,11 @@ export default function Header() {
         <header className="fixed w-full p-2 z-20 backdrop-blur-md">
             <div className="mx-auto max-w-3xl">
                 <nav className="flex items-center gap-3 text-base">
-                    <a href="/" className="group">
+                    <Link href="/" className="group">
                         <h2 className="font-extrabold tracking-tighter p-2 font-mplus text-lg">
                             Ccctw Blog
                         </h2>
-                    </a>
+                    </Link>
                     <div className="flex-1"></div>
                     <div className="item-center gap-6 flex">
                         {/* <a
@@ -18,18 +19,18 @@ export default function Header() {
                         >
                             About
                         </a> */}
-                        <a
+                        <Link
                             href="/tags"
                             className="inline-flex no-underline font-extrabold"
                         >
                             Blog
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                             href="/projects"
                             className="inline-flex no-underline font-extrabold"
                         >
                             Project
-                        </a>
+                        </Link>
                     </div>
                     <div className="flex-1"></div>
                     <a
