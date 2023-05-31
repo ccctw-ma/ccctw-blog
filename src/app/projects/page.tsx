@@ -17,7 +17,7 @@ export default function page() {
         },
         {
             img: "/rn-app.jfif",
-            title: "RN-App",
+            title: "ReactNative-App",
             description:
                 "An Android app for collecting、processing and sending timestamps data, using ReactNative",
             url: "https://github.com/ccctw-ma/RN-collect-timestamps.git",

@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import "./globals.css";
+import "./github-markdown.css";
+import "github-markdown-css/github-markdown-dark.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
