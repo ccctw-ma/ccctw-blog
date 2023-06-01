@@ -17,7 +17,7 @@ export default async function page(props: { params: { name: string } }) {
 export async function generateStaticParams() {
     const blogsPath = path.join(process.cwd(), "src", "blogs");
     const files = fs.readdirSync(blogsPath);
-    return files.map((file) => {
-        name: file.split(".")[0];
-    });
+    return files.map((file) => ({
+        name: file.split(".")[0],
+    }));
 }
